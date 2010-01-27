@@ -2,5 +2,5 @@ gems:
 - name: mysql
   version: 2.8.1
 - name: rails
-  version: 2.3.4
+  version: 2.3.5
 - name: dodo
