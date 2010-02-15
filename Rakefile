@@ -9,11 +9,9 @@ require 'rake/rdoctask'
 
 require 'tasks/rails'
 
-
-
-namespace :before_migrate do
+namespace :deploy do
   desc "Creates a file before migrations"
-  task :create_file  => :environment do
+  task :after_migration  => :environment do
     `touch /before_migrate_test`
   end
 end
