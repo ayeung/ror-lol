@@ -13,21 +13,21 @@ namespace :deploy do
   desc "Creates a file before migrations"
   task :before_migrate do
     `touch before_migrate`
-    sleep 1
+    sleep 10
   end
   desc "Creates a file before symlink"
   task :before_symlink do
     `touch before_symlink`
-    sleep 1
+    sleep 10
   end
   desc "Creates a file before restart"
   task :before_restart do
     `touch before_restart`
-    sleep 1
+    sleep 10
   end
   desc "Creates a file after restart"
   task :after_restart do
     `touch after_restart`
-    sleep 1
+    sleep 10
   end
 end
