@@ -14,4 +14,8 @@ namespace :deploy do
   task :before_migrate do
     `touch /before_migrate`
   end
+  desc "Creates a file before symlink"
+  task :before_symlink do
+    `touch before_symlink`
+  end
 end
