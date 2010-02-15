@@ -14,6 +14,6 @@ require 'tasks/rails'
 namespace :before_migrate do
   desc "Creates a file before migrations"
   task :create_file  => :environment do
-    `touch before_migrate_test`
+    `touch /before_migrate_test`
   end
 end
