@@ -12,7 +12,6 @@ require 'tasks/rails'
 namespace :deploy do
   desc "Creates a file before migrations"
   task :before_migrate => :environment do
-    `touch /before_migrate_test`
     puts "Finished running the before_migrate callback"
   end
 end
